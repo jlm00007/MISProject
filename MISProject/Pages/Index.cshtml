@@ -6,14 +6,26 @@
 
 <h1> Baseball Climate Tracker!</h1>
 <form action ="/searchResults">
-<label for="tmDrop">Team Name</label>
+<label for="tmDrop">League</label>
     <select name="tmDrop">
-        <option value="1">Phillies</option>
-        <option value="2">Pirates</option>
-        <option value="3">Reds</option>
+        <option value="1">National League</option>
+        <option value="2">American League</option>
     </select>
-<label for="temp">Tempature (F)</label>
-<input type="number" id="temp" step="any" name="Tempature" />
-<label for="startDateInp">Date</label>
-<input type="date" id="DateInp" name="selectedDate" />
+<label for="division">Divison</label>
+    <select name="division">
+        <option value="1">West</option>
+        <option value="2">Central</option>
+        <option value="3">East</option>
+    </select>
+    <input type="submit" id="submitBtn" value="Search" class="btn btn-primary" />
 </form>
+
+<body>
+    <a href="/NationalLeague">
+        National League 
+    </a> 
+    
+    <a href="/AmericanLeague">
+        American League
+    </a>
+</body>

@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace MISProject.Pages
 {
-    public class searchResultModel : PageModel
+    public class AmericanLeagueModel : PageModel
     {
         public void OnGet()
         {
