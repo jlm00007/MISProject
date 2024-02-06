@@ -42,3 +42,6 @@ Here is a quick checklist with what I hope to accomplish in the future:
 
 ## Sources ## 
 [Calander Script](https://github.com/capjamesg/web-calendar/blob/main/webcalendar.js)
+[W3 Schools HTML](https://www.w3schools.com/html/default.asp)
+[W3 Schools CSS](https://www.w3schools.com/css/default.asp)
+Class Work 
