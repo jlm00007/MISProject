@@ -35,7 +35,7 @@ This GitHub repo creates a useable weather tracker for a searched location.  I m
   Each teams page is fundamnetally the same with all the information being the same.  The page currently displays a table consisting of a date, win/loss, and the tempature.  Moving forward I hope to clean the data so that its searchable rather than just all being on the page at once.
   Id like the user to be able to  filter the data.  I attempted to make the websites more personable by adding the teams home stadium as the background of their page.
 ## Moving Forward ##
-Moving forward I'd like to make the website look better and run smoother.  I want it to be able to run queries so a user can grab specific information they may need.  With these queries Id like to be able to show the data in other ways such as counting the number of wins or losses at a certain tempature or showing
+Moving forward I'd like to make the web)site look better and run smoother.  I want it to be able to run queries so a user can grab specific information they may need.  With these queries Id like to be able to show the data in other ways such as counting the number of wins or losses at a certain tempature or showing
 a specific date and weather the team won or lost and what the temperature was.  
 Here is a quick checklist with what I hope to accomplish in the future:
 - [ ] Make site data filterable
@@ -51,3 +51,5 @@ Here is a quick checklist with what I hope to accomplish in the future:
 [W3 Schools CSS](https://www.w3schools.com/css/default.asp) <br>
 [Markdown Guide](https://www.markdownguide.org/cheat-sheet/) <br>
 Class Work <br>
+[Stack Overflow](https://stackoverflow.com/) <br>
+
