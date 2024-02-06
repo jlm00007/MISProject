@@ -28,7 +28,7 @@ This website is like the other two in that it gives a plethora of information on
 
 ## Website Overview ##
 ### Home Page ###
-  The first page the user sees when they navigate to my site is simple.  Its a jumping off point to other parts of my website where the actual information is.  The home page lists every team in the NL East and allows you to navigate to the team page by clicking the teams name.
+  The first page the user sees when they navigate to my site is simple.  Its a jumping off point to other parts of my website where the actual information is.  The home page lists every team in the NL East and allows you to navigate to the team page by clicking the teams name.  It also contains a weather bar that allows you to search a location to get weather data from, I am working on making it only show the 5 teams stadium locations.
 ### Team Sites ###
   Each teams page is fundamnetally the same with all the information being the same.  The page currently displays a table consisting of a date, win/loss, and the tempature.  Moving forward I hope to clean the data so that its searchable rather than just all being on the page at once.
   Id like the user to be able to  filter the data.  I attempted to make the websites more personable by adding the teams home stadium as the background of their page.
