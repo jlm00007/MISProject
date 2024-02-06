@@ -3,27 +3,38 @@
 @{
     ViewData["Title"] = "Home page";
 }
+<head>
+    <link rel="stylesheet" href="site.css" />
+    <style>
+        body {
+            background-image: url('https://sportsmatik.com/uploads/thumbs/700x500/wiki-venues/citizens-bank-park_1582023244.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+</head>
 
 <h1> Baseball Climate Tracker!</h1>
-<form action ="/searchResults">
-<label for="tmDrop">League</label>
-    <select name="tmDrop">
-        <option value="1">National League</option>
-        <option value="2">American League</option>
-    </select>
-<label for="division">Divison</label>
-    <select name="division">
-        <option value="1">West</option>
-        <option value="2">Central</option>
-        <option value="3">East</option>
-    </select>
-    <input type="submit" id="submitBtn" value="Search" class="btn btn-primary" />
-</form>
-
-    <a href="/NationalLeague">
-        <h2>National League </h2>
+<h3>Please Select the National League East team you want to see climate data for</h3>
+<body>
+    <a href="/Phillies">
+        <strong>Phillies </strong>
     </a> 
-    
-    <a href="/AmericanLeague">
-    <h2>American League</h2>
-</a>
+    <br />
+    <a href="/Braves">
+    <strong>Braves</strong>
+    </a>
+    <br />
+    <a href="/Marlins">
+    <strong>Marlins</strong>
+    </a>
+    <br />
+    <a href="/Mets">
+    <strong>Mets</strong>
+    </a>
+    <br />
+    <a href="/Nationals">
+    <strong>Nationals</strong>
+    </a>
+</body>
