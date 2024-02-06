@@ -53,3 +53,6 @@ Here is a quick checklist with what I hope to accomplish in the future:
 Class Work <br>
 [Stack Overflow](https://stackoverflow.com/) <br>
 
+#### Reflection ####
+The use of external sources has been critical in my success so far.  Without the ability to see others code on github or stack overflow many of the problems that I have couldnt be solved.  Github is very helpful in generating ideas and finding useful aspects you might want to add to your website, where as stack overflow is beneficial for troubleshooting errors or learning how to better do some aspects of code.  The most useful resource of all of them however, is W3 Schools. W3 helped establish an understanding of basic functions of CSS, HTML, and even JavaScript.  Its what allows me to learn and create more on my own without having to rely entirely on help from stack overflow or github.  I did not use Chat GPT during this assignment, but I am sure I will in the future. I beleive it will be beneficial to help think of ideas while aslo helping to fix some broken code; while its not perfect it might give me the push I need to figure it out on my own.  
+
