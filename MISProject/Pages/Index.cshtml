@@ -7,34 +7,66 @@
     <link rel="stylesheet" href="site.css" />
     <style>
         body {
-            background-image: url('https://sportsmatik.com/uploads/thumbs/700x500/wiki-venues/citizens-bank-park_1582023244.jpg');
+            background-color:cornflowerblue;          
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
         }
+        #main{
+            background-color: white;
+            border:solid 2px;
+            display: flex;
+            justify-content:space-around;
+        }
+        #Head{
+            background-color: indianred;
+            display: flex;
+            justify-content:space-around;
+        }
     </style>
 </head>
 
-<h1> Baseball Climate Tracker!</h1>
-<h3>Please Select the National League East team you want to see climate data for</h3>
+<h1 id="Head"> Baseball Climate Tracker!</h1>
+<h3 id="Head">Please Select the National League East team you want to see climate data for</h3>
 <body>
-    <a href="/Phillies">
-        <strong>Phillies </strong>
-    </a> 
-    <br />
-    <a href="/Braves">
-    <strong>Braves</strong>
-    </a>
-    <br />
-    <a href="/Marlins">
-    <strong>Marlins</strong>
-    </a>
-    <br />
-    <a href="/Mets">
-    <strong>Mets</strong>
-    </a>
-    <br />
-    <a href="/Nationals">
-    <strong>Nationals</strong>
-    </a>
+<div id="main">
+    <div style="background-color:white;">
+        <a href="/Phillies">Phillies </a>
+    </div>
+    <div style="background-color:white;">
+        <a href="/Braves">Braves</a>
+    </div>
+    <div style="background-color:white;">
+        <a href="/Mets">Mets</a>
+    </div>
+    <div style="background-color:white;">
+        <a href="/Marlins">Marlins </a>
+    </div>
+    <div style="background-color:white;">
+        <a href="/Nationals">Nationals</a>
+    </div>
+    </div>
+</body>
+
+<body>
+    <div class="app-main" id="parent">
+        <div class="header">
+            <h4>Check the stadium weather before you go!</h4>
+        </div>
+        <div class="searchInputBox">
+            <input type="text" name="" id="input-box" class="input-box" placeholder="enter city name">
+        </div>
+        <div class="weather-body" id="weather-body">
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+          integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>

@@ -54,22 +54,146 @@ p{
     color:white;
 }
 ul {
-    list-style-type: none;
+    display: flex;
+    align-items: stretch; 
+    justify-content: space-between;
+    width: 100%;
+    background: #cacaca;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #333;
 }
-li{
-    float:left;
+
+li {
+    display: block;
+    flex: 0 1 auto;
+    list-style-type: none;
+    background: #fafafa;
 }
 li a {
         display: block;
-        color: white;
+        color: black;
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
 }
 li a:hover {
-        background-color: #111;
+        background-color: white;
  }
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url("img/bg1.jpg");
+    min-height: 92vh;
+    overflow: auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+.header h4 {
+    color: black;
+    font-weight: 700;
+    font-size: 2.4rem;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.app-main {
+    min-height: 10vh;
+    width: 30vw;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 15px;
+    background: #c0dfec; /* fallback for old browsers */
+    background-color: black ;
+    background-color: indianred; 
+}
+
+    .app-main > * {
+        margin-bottom: 20px;
+    }
+
+.input-box {
+    width: 100%;
+    background: azure;
+    color: black;
+    font-weight: 500;
+    border: none;
+    font-size: 1.7rem;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    outline: none;
+    border: none;
+}
+
+.weather-body {
+    color: #fff;
+    padding: 20px;
+    line-height: 2rem;
+    border-radius: 10px;
+    background-color: #eff1f3;
+    display: none;
+    background-color: cornflowerblue;
+}
+
+.location-deatils {
+    font-weight: bold;
+}
+
+.weather-status {
+    padding: 20px;
+}
+
+.temp {
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 20px 0px;
+    text-shadow: 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.weather {
+    margin-top: 25px;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.min-max {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+.day_details {
+    padding: 20px;
+}
+
+.sun-detail,
+.basic {
+    font-size: 1rem;
+}
+
+#weather-icon {
+    color: black;
+}
+
+
+@media screen and (max-width: 800px) {
+    .app-main {
+        width: 95%;
+        padding: 10px;
+    }
+
+    body {
+        min-height: 94vh;
+    }
+}
