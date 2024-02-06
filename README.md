@@ -21,6 +21,7 @@ Aside from giving stats this website also gives futures and prospective stats fo
 This website is like the other two in that it gives a plethora of information on many different players and teams.  The thing I specifically like and want to replicate is the drop down box to navigate and sort the data the user is trying to find.  Just like the travel website we are building by asking the user what they are trying to find at the very top of the website it becomes veery easy to navigate, and anyone can use it. 
 
 ### GitHub Repos ###
+[Searchable Tables](https://github.com/key-lime-box/dynamic-table?tab=readme-ov-file)
 
 
 ## Website Overview ##
