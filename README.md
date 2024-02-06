@@ -22,8 +22,10 @@ This website is like the other two in that it gives a plethora of information on
 
 ### GitHub Repos ###
 [Searchable Tables](https://github.com/key-lime-box/dynamic-table?tab=readme-ov-file)
+This has not been implemented yet.  But I will be using it to make better tables for my teams so that people can querey out data and not have to scroll through a bunch of data.  This creates tables that can be sorted and filtered similar to Excel; it is written in java script.
 
-[Weather Tracker](https://github.com/sachinprajapati8604/Weather_webApp/blob/main/index.html)
+[Weather Tracker](https://github.com/sachinprajapati8604/Weather_webApp/blob/main/index.html) <br>
+This GitHub repo creates a useable weather tracker for a searched location.  I made changes to the look of it as well as converting it to farenheit.  This is used to check the weather at the city the stadium is located.  It can be used to plan your day at the ballpark or to see what the weather is supposed to be so you can look at the teams table and get a better understanding of how they might do.  With it not being limited to certain teams I am able to expand my website in the future to beyond the NL East.  
 
 
 ## Website Overview ##
