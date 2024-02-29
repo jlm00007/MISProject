@@ -6,6 +6,6 @@ namespace BaseballAPI.Data
     {
         public DBContextClass(DbContextOptions<DbContext> options): base(options) 
         { }
-        public DbSet<Team> Team { get; set; }
+        public DbSet<Player> Player { get; set; }
     }
 }

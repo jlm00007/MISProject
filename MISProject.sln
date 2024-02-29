@@ -5,7 +5,7 @@ VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MISProject", "MISProject\MISProject.csproj", "{DB7313FA-162D-4D1C-A951-92D7F1647260}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseballAPI", "BaseballAPI\BaseballAPI.csproj", "{D8C1B7D6-E004-4B52-9ED9-7A57435F7E7E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaseballAPI", "BaseballAPI\BaseballAPI.csproj", "{D8C1B7D6-E004-4B52-9ED9-7A57435F7E7E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
