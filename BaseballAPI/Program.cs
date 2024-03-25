@@ -1,12 +1,13 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Hosting;
 using BaseballAPI.Data;
 using BaseballAPI.Repositories;
-using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddScoped<IPlayerService, PlayerService>();
 
-builder.Services.AddScoped<IPlayerInfo, PlayerInfo>();
 builder.Services.AddDbContext<DBContextClass>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
@@ -20,7 +21,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowMyRazorPagesApp",
         builder =>
         {
-            builder.WithOrigins("https://localhost:7022")
+            builder.WithOrigins("https://localhost:7146")
             .AllowAnyHeader()
             .AllowAnyMethod();
         }
@@ -46,4 +47,3 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
-

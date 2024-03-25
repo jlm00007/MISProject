@@ -3,8 +3,8 @@ using BaseballAPI.Entities;
 
 namespace BaseballAPI.Repositories
 {
-    public interface IPlayerInfo
+    public interface IPlayerService
     {
-        public Task<List<Player>> PlayerPos(string Position);
+        public Task<List<Player>> GetPlayerPos(string Position);
     }
 }

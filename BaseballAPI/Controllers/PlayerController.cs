@@ -8,22 +8,22 @@ namespace BaseballAPI.Controllers
     [ApiController]
     public class PlayerController : Controller
     {
-        private readonly IPlayerInfo PlayerInfo;
-        public PlayerController(IPlayerInfo PlayerInfo)
+        private readonly IPlayerService _PlayerService;
+        public PlayerController(IPlayerService PlayerInfo)
         {
 
-            this.PlayerInfo = PlayerInfo;
+            _PlayerService = PlayerInfo;
 
         }
         [HttpGet("{getPlayerDetails}")]
         public async Task<List<Player>> PlayerPos(string Position)
         {
-            var PlayerDetails = await PlayerInfo.PlayerPos(Position);
-            if (PlayerDetails == null)
+            var player = await _PlayerService.GetPlayerPos(Position);
+            if (player == null)
             {
                 //return NotFound();
             }
-            return PlayerDetails;
+            return player;
         }
 
     }
