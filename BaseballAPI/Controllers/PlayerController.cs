@@ -9,16 +9,16 @@ namespace BaseballAPI.Controllers
     public class PlayerController : Controller
     {
         private readonly IPlayerService _PlayerService;
-        public PlayerController(IPlayerService PlayerInfo)
+        public PlayerController(IPlayerService PlayerService)
         {
 
-            _PlayerService = PlayerInfo;
+            _PlayerService = PlayerService;
 
         }
-        [HttpGet("{getPlayerDetails}")]
+        [HttpGet("{Position}")]
         public async Task<List<Player>> PlayerPos(string Position)
         {
-            var player = await _PlayerService.GetPlayerPos(Position);
+            var player = await _PlayerService.PlayerPos(Position);
             if (player == null)
             {
                 //return NotFound();
