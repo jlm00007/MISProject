@@ -4,6 +4,7 @@ namespace BaseballAPI.Entities
 {
     public class Stat
     {
+        [Key]
         [Required]
         public int PID { get; set; }
 

@@ -4,16 +4,17 @@ namespace BaseballAPI.Entities
 {
     public class Player
     {
+        [Key]
         [Required]
-        public int PID { get; set; }
+        public short PID { get; set; }
       
         public string? Name { get; set; }
        
-        public string? Number { get; set; }
+        public short? Number { get; set; }
         
-        public string? Position { get; set; }
+        public required string Position { get; set; }
        
-        public string TID { get; set; }
+        public short TID { get; set; }
       
     }
 }
