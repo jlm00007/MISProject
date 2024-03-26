@@ -7,11 +7,11 @@ namespace BaseballAPI.Entities
         [Required]
         public int PID { get; set; }
 
-        public int Hits { get; set; }
+        public int? Hits { get; set; }
 
-        public int Strikeouts { get; set; }
+        public int? Strikeouts { get; set; }
 
-        public int Homeruns { get; set; }
+        public int? Homeruns { get; set; }
 
 
     }

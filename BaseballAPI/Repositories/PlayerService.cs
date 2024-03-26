@@ -19,11 +19,6 @@ namespace BaseballAPI.Repositories
             var PlayerPos = await Task.Run(() => _dbContextClass.Player.FromSqlRaw("EXEC spPlayerPos @Position", param).ToListAsync());
             return PlayerPos;
         }
-        public async Task<List<Player>> PlayerStat(string Name)
-        {
-            var param = new SqlParameter("@Name", Name);
-            var PlayerStat = await Task.Run(() => _dbContextClass.Player.FromSqlRaw("Exec spPLayerStat @Name", param).ToListAsync());
-            return PlayerStat;
-        }
+
     }
 }

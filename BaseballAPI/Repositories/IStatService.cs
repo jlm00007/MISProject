@@ -1,12 +1,10 @@
 ﻿using System.Threading.Tasks;
-
 using BaseballAPI.Entities;
 
 namespace BaseballAPI.Repositories
 {
-    public interface IPlayerService
+    public interface IStatService
     {
-        public Task<List<Player>> PlayerPos(string Position);
-
+        public Task<List<Stat>> PlayerStat(string Name);
     }
 }
