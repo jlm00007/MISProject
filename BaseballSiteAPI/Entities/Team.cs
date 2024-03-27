@@ -4,6 +4,7 @@ namespace BaseballSiteAPI.Entities
 {
     public class Team
     {
+        [Key]
         public short TID { get; set; }
         public required string TName { get; set; }
         public required string City { get; set; }
