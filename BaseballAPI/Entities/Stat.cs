@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BaseballAPI.Entities
 {
@@ -6,13 +7,14 @@ namespace BaseballAPI.Entities
     {
         [Key]
         [Required]
-        public int PID { get; set; }
+        public short SID { get; set; }
+        
+        public short PID { get; set; }
+        public short? Hits { get; set; }
 
-        public int? Hits { get; set; }
+        public short? Strikeouts { get; set; }
 
-        public int? Strikeouts { get; set; }
-
-        public int? Homeruns { get; set; }
+        public short? Homeruns { get; set; }
 
 
     }
