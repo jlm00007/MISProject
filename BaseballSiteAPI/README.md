@@ -1,1 +1,6 @@
+The Climate Swing Plus website offers baseball enthusiasts an interactive experience tailored to understanding the relationship between weather conditions and Major League Baseball (MLB) player performance. Upon arriving at the homepage, users are greeted with an interface featuring a search bar allowing them to retrieve real-time weather data for various cities. Additionally, clickable references for each MLB division serve as gateways to divisional pages. By clicking on an MLB division, users can access all the teams in that division through the GetTeamsByDivision API.
+
+Within these divisional sections, users encounter detailed breakdowns of individual teams and how weather conditions have impacted their recent performances. Each team page further delves into game analyses and provides weather forecasts specific to the team's ballpark, aiding fans in planning their game attendance. The site also offers team roster information by utilizing the GetPlayersByTeam API.
+
+Climate Swing Plus also incorporates two additional APIs. The PlayerPros API enables users to list players by entering specific positions like catcher. Additionally, the PlayerStat API allows users to search for player statistics by name. These additions enhance the user experience by providing easier access to player data for analysis and decision-making.
 ﻿
