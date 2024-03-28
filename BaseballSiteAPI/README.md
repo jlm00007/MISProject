@@ -21,6 +21,8 @@ Climate Swing Plus integrates two additional APIs to enhance the user experience
 - **GetTeamsByDivision API**: Retrieve teams by division.  (Gino Cava)
 - **PlayerPros API**: List players by entering specific positions. (Joe Monahan)
 - **PlayerStat API**: Search for player statistics by name. (Joe Monahan)
+- **GetPlayerDetails**: Retrieve players information by ID. (Dustin Null)
+- **AddPlayer**: Adds a player by submiting all required variables. (Dustin Null)
 
 ## How to Use
 1. Visit the homepage and utilize the search bar to retrieve real-time weather data.
