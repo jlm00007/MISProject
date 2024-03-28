@@ -28,4 +28,7 @@ Climate Swing Plus integrates two additional APIs to enhance the user experience
 3. Navigate team pages for detailed breakdowns of performance and weather forecasts.
 4. Utilize the additional APIs to access player information and statistics.
 
+## References
+- **ChatGPT** was used with the following prompt: "I am converting SQL server stored procedures to apis in ASP.NET Core8. I need to convert this table to a class (code). Give me the code." This was used to generate the class code for the different entities.
+
 ﻿
