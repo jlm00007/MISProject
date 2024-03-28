@@ -14,13 +14,13 @@ Clickable references for each MLB division serve as gateways to divisional pages
 Each team page provides comprehensive analyses of recent performances, highlighting how weather conditions have influenced gameplay. Users can also access weather forecasts specific to each team's ballpark, aiding in game attendance planning.
 
 ### Player Information
-Climate Swing Plus integrates two additional APIs to enhance the user experience. The GetTeamsByDivision API offers team roster information, while the PlayerPros API allows users to list players by specific positions. Additionally, the PlayerStat API enables users to search for player statistics by name.
+Climate Swing Plus integrates two additional APIs to enhance the user experience. The GetTeamsByDivision API offers team roster information, while the PlayerPos API allows users to list players by specific positions. Additionally, the PlayerStat API enables users to search for player statistics by name.
 
 ## APIs Used
 - **GetPlayersByTeam API**: Retrieve players by team.  (Gino Cava)
 - **GetTeamsByDivision API**: Retrieve teams by division.  (Gino Cava)
-- **PlayerPros API**: List players by entering specific positions.
-- **PlayerStat API**: Search for player statistics by name.
+- **PlayerPros API**: List players by entering specific positions. (Joe Monahan)
+- **PlayerStat API**: Search for player statistics by name. (Joe Monahan)
 
 ## How to Use
 1. Visit the homepage and utilize the search bar to retrieve real-time weather data.
@@ -30,5 +30,6 @@ Climate Swing Plus integrates two additional APIs to enhance the user experience
 
 ## References
 - **ChatGPT** was used with the following prompt: "I am converting SQL server stored procedures to apis in ASP.NET Core8. I need to convert this table to a class (code). Give me the code." This was used to generate the class code for the different entities.
+- Various error messages were also given to ChatGPT in an attempt to resolve any errors.
 
 ﻿
