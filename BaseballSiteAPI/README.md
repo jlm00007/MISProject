@@ -17,8 +17,8 @@ Each team page provides comprehensive analyses of recent performances, highlight
 Climate Swing Plus integrates two additional APIs to enhance the user experience. The GetTeamsByDivision API offers team roster information, while the PlayerPros API allows users to list players by specific positions. Additionally, the PlayerStat API enables users to search for player statistics by name.
 
 ## APIs Used
-- **GetPlayersByTeam API**: Retrieve team roster information by division.  (Gino Cava)
-- **GetTeamsByDivision API**: Retrieve team roster information by division.  (Gino Cava)
+- **GetPlayersByTeam API**: Retrieve players by team.  (Gino Cava)
+- **GetTeamsByDivision API**: Retrieve teams by division.  (Gino Cava)
 - **PlayerPros API**: List players by entering specific positions.
 - **PlayerStat API**: Search for player statistics by name.
 
