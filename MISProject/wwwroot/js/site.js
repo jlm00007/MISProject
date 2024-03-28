@@ -156,3 +156,9 @@ function addZero(i) {
     }
     return i;
 }
+
+
+
+async function displayerPlayerDetails(PID) {
+    const repsonse = await fetch('')
+}

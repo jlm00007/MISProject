@@ -1,0 +1,6 @@
+@BaseballAPI_HostAddress = http://localhost:5099
+
+GET {{BaseballAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
