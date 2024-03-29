@@ -1,5 +1,9 @@
-# MIS Project Part 2 #
+<details>
+
+<summary>  MIS Project Part 2.1  </summary>
+
 ## Overview ##
+
 This is a prototype build for my baseball climate website.  I hope to be able to add data so the viewer can select a team in the National League East and view how many wins they have when its a certain tempature outside.  Its currently filled with dummy data that can be changed
 as I learn to scrape or upload data to my website/code. Below is a breakdown of my current pages as of 2/6/2024.
 ## Research Findings ##
@@ -55,8 +59,13 @@ Class Work <br>
 
 #### Reflection ####
 The use of external sources has been critical in my success so far.  Without the ability to see others code on github or stack overflow many of the problems that I have couldnt be solved.  Github is very helpful in generating ideas and finding useful aspects you might want to add to your website, where as stack overflow is beneficial for troubleshooting errors or learning how to better do some aspects of code.  The most useful resource of all of them however, is W3 Schools. W3 helped establish an understanding of basic functions of CSS, HTML, and even JavaScript.  Its what allows me to learn and create more on my own without having to rely entirely on help from stack overflow or github.  I did not use Chat GPT during this assignment, but I am sure I will in the future. I beleive it will be beneficial to help think of ideas while aslo helping to fix some broken code; while its not perfect it might give me the push I need to figure it out on my own.  
+</details>
 
 ***
-## Merger Statement ## 
-We're creating a comprehensive application that seamlessly integrates weather analytics with team performance metrics. Whether it's understanding how temperature fluctuations impact batting averages or uncovering the influence of weather patterns on win-loss records, our application provides insight into the correlation between climate and baseball. Additionally, we go beyond the confines of the ballpark by offering users the ability to explore the temperature data of any city with a simple search feature. Whether you're planning on attending the game, or you are interested for fantasy purposes, our application is ideal for you.
+<details>
+<summary> MIS Project part 2.2 </summary>
 
+## Merger Statement ##
+
+We're creating a comprehensive application that seamlessly integrates weather analytics with team performance metrics. Whether it's understanding how temperature fluctuations impact batting averages or uncovering the influence of weather patterns on win-loss records, our application provides insight into the correlation between climate and baseball. Additionally, we go beyond the confines of the ballpark by offering users the ability to explore the temperature data of any city with a simple search feature. Whether you're planning on attending the game, or you are interested for fantasy purposes, our application is ideal for you.
+</details>
