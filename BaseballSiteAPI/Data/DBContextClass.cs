@@ -8,5 +8,6 @@ namespace BaseballSiteAPI.Data
         public DBContextClass(DbContextOptions<DBContextClass> options) : base(options) { }
         public DbSet<Player> Player { get; set; }
         public DbSet<Team> Teams { get; set; }
+        public DbSet<Stat> Stat { get; set; }
     }
 }
