@@ -7,7 +7,7 @@ namespace BaseballSiteAPI.Entities
     {
         [Key]
         [Required]
-        public int SID { get; set; }
+        public short SID { get; set; }
 
         public short PID { get; set; }
         public short? Hits { get; set; }
