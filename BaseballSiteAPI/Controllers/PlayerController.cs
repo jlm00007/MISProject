@@ -35,5 +35,25 @@ namespace BaseballSiteAPI.Controllers
             return player;
         }
 
+        [HttpGet("{PID}")]
+        public async Task<List<Player>> PlayerGetDetails(int PID)
+        {
+
+            var playerDetails = await playerService.PlayerGetDetails(PID);
+            if (playerDetails == null)
+            {
+                //return NotFound();
+            }
+            return playerDetails;
+
+        }
+        [HttpPost]
+        public async Task<ActionResult<int>> AddPlayer(Player player)
+        {
+
+            var playerDetails = await playerService.AddPlayer(player);
+            return playerDetails;
+
+        }
     }
 }
