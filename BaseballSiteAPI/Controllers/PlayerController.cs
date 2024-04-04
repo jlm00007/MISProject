@@ -24,7 +24,7 @@ namespace BaseballSiteAPI.Controllers
             }
             return playerDetails;
         }
-        [HttpGet("{Position}")]
+        [HttpGet("position/{Position}")]
         public async Task<List<Player>> PlayerPos(string Position)
         {
             var player = await playerService.PlayerPos(Position);

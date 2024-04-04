@@ -29,7 +29,7 @@ namespace BaseballSiteAPI.Repositories
         {
 
             var param = new SqlParameter("@PID", PID);
-            var playerDetails = await Task.Run(() => _dbContextClass.Player.FromSqlRaw("exec spGetPlayerDetails @PID", param).ToListAsync());
+            var playerDetails = await Task.Run(() => _dBContextClass.Player.FromSqlRaw("exec spGetPlayerDetails @PID", param).ToListAsync());
             return playerDetails;
 
         }
@@ -41,7 +41,7 @@ namespace BaseballSiteAPI.Repositories
             var pNumber = new SqlParameter("Number", player.Number);
             var pPosition = new SqlParameter("Position", player.Position);
             var TID = new SqlParameter("TID", player.TID);
-            var playerDetails = await Task.Run(() => _dbContextClass.Database.ExecuteSqlRaw("exec spAddPlayer @PID SMALLINT,\r\n    @Name NVARCHAR(max),\r\n    @Number NVARCHAR(max),\r\n    @Position NVARCHAR(max), \r\n    @TID SMALLINT"));
+            var playerDetails = await Task.Run(() => _dBContextClass.Database.ExecuteSqlRaw("exec spAddPlayer @PID SMALLINT,\r\n    @Name NVARCHAR(max),\r\n    @Number NVARCHAR(max),\r\n    @Position NVARCHAR(max), \r\n    @TID SMALLINT"));
             return playerDetails;
 
         }
