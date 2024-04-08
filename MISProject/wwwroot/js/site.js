@@ -162,3 +162,27 @@ function addZero(i) {
 async function displayerPlayerDetails(PID) {
     const repsonse = await fetch('')
 }
+
+document.getElementByID("searchBox").addEventListener("submit", function (event) {
+    event.preventDefault();
+    const query = document.getElementById("searchInput").value;
+    search(query);
+});
+
+function search(query) {
+    fetch(/** api query link **/)
+        .then(resposne => {
+            if (!repsone.ok) {
+                throw new Error("Network Response not OK");
+            }
+            return reposnse.json;
+        })
+        .then(data => {
+            display.searchResults(data);
+        })
+        .catch(error => {
+            console.error("There was a problem with your search:", error);
+        });
+
+    function displaysearchResults(results) { };
+}
