@@ -159,7 +159,7 @@ function addZero(i) {
 
 
 
-async function displayerPlayerDetails(PID) {
+async function displayerPlayerDetails(Position) {
     const repsonse = await fetch('')
 }
  
@@ -170,11 +170,11 @@ document.getElementByID("searchBox").addEventListener("submit", function (event)
 });
 
 async function displaySearchResults(position) {
-    fetch('https://localhost:7270/api/Player/position/position=${position}')
+    fetch('https://localhost:7270/api/Player/position?={position}')
     const data = await response.json();
     var innerHtml = "";
     for (let i = 0; i < data.length; i++) {
-        innerHtml += `<div style="card"><a href="https://localhost:7270/api/Player/position/position=${position}</a></div>`;
+        innerHtml += `<div style="card"><a href="https://localhost:7270/api/Player/position?={position}</a></div>`;
     }
     document.getElementById('searchResults').innerHTML = innerHtml;
 

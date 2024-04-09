@@ -45,6 +45,9 @@
     <div style="background-color:white;">
         <a href="/Nationals">Nationals</a>
     </div>
+        <div> 
+            <a href="'https://localhost:7270/api/Team/getteamsbydivision?DivisionName=Al%20east'">AL East</a>
+        </div>
     </div>
 </body>
 
@@ -71,12 +74,15 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 
-
-    <form id= "searchBox" action="/searchResults">
+<!-- Not working -->
+    <form id="searchBox" action="https://localhost:7270/api/Player/position?={position}">
         <input type="text" id="searchInput" placeholder="Search" />
-        <button type="Submit">Search</button>
+        <button type="Submit" onclick="displaySearchResults(position)">Search</button>
     </form>
   
     <div id="searchResults"></div>
+
+    
+
 
 </body>
