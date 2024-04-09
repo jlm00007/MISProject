@@ -162,15 +162,15 @@ function addZero(i) {
 async function displayerPlayerDetails(PID) {
     const repsonse = await fetch('')
 }
-
+ 
 document.getElementByID("searchBox").addEventListener("submit", function (event) {
     event.preventDefault();
-    const query = document.getElementById("searchInput").value;
+    var query = document.getElementById("searchInput").value;
     search(query);
 });
 
 function search(query) {
-    fetch(/** api query link **/)
+    fetch(https://localhost:7270/swagger/index.html)
         .then(resposne => {
             if (!repsone.ok) {
                 throw new Error("Network Response not OK");
@@ -184,5 +184,5 @@ function search(query) {
             console.error("There was a problem with your search:", error);
         });
 
-    function displaysearchResults(results) { };
+    function displaySearchResults(results) { };
 }
