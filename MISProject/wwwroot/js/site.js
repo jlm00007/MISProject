@@ -169,20 +169,14 @@ document.getElementByID("searchBox").addEventListener("submit", function (event)
     search(query);
 });
 
-function search(query) {
-    fetch(https://localhost:7270/swagger/index.html)
-        .then(resposne => {
-            if (!repsone.ok) {
-                throw new Error("Network Response not OK");
-            }
-            return reposnse.json;
-        })
-        .then(data => {
-            display.searchResults(data);
-        })
-        .catch(error => {
-            console.error("There was a problem with your search:", error);
-        });
+async function displaySearchResults(position) {
+    fetch('https://localhost:7270/api/Player/position/position=${position}')
+    const data = await response.json();
+    var innerHtml = "";
+    for (let i = 0; i < data.length; i++) {
+        innerHtml += `<div style="card"><a href="https://localhost:7270/api/Player/position/position=${position}</a></div>`;
+    }
+    document.getElementById('searchResults').innerHTML = innerHtml;
 
-    function displaySearchResults(results) { };
+    
 }
