@@ -1,0 +1,11 @@
+﻿@page
+@model MISProject.Pages.TeamModel
+@{
+    var teamID = HttpContext.Request.Query["teamID"];
+}
+<h2 id="teamName" style="visibility: hidden;"></h2>
+<div id="teamPlayers" style="visibility: hidden;"></div>
+
+<script type="module">
+    displayPlayers(@teamID)
+</script>

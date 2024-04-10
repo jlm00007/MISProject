@@ -158,6 +158,7 @@ function addZero(i) {
 }
 
 
+ /** 
 
 async function displayerPlayerDetails(Position) {
     const repsonse = await fetch('')
@@ -168,7 +169,6 @@ document.getElementByID("searchBox").addEventListener("submit", function (event)
     var query = document.getElementById("searchInput").value;
     search(query);
 });
-
 async function displaySearchResults(position) {
     fetch(`https://localhost:7270/api/Player/position/{position}`)
     const data = await response.json();
@@ -178,5 +178,11 @@ async function displaySearchResults(position) {
     }
     document.getElementById('searchResults').innerHTML = innerHtml;
 
-    
+    }
+    */
+
+async function displayPlayers(teamID) {
+    const response = await fetch(`https://localhost:7270/api/Player/getplayerdetails?TeamID=${teamID}`)
+    const data = await response.json();
+    document.getElementById('teamName').style.visibility = "visible";
 }
