@@ -178,12 +178,12 @@ async function displaySearchResults(position) {
 }
  */   
 
-async function displayPlayers(teamID) {
+/**async function displayPlayers(teamID) {
     const response = await fetch(`https://localhost:7270/api/Player/getplayerdetails?TeamID=${teamID}`)
     const data = await response.json();
     document.getElementById('teamName').style.visibility = "visible";
     }
-
+    */
 //Displays players based on position
 async function displayPlayerPos(position) {
     const response = await fetch(`https://localhost:7270/api/Player/position/${position}`);
@@ -221,5 +221,37 @@ async function displayPlayerPos(position) {
 
 
 
-
+async function displayPlayers(teamID) {
+    const response = await fetch(`https://localhost:7270/api/Player/getplayerdetails?TeamID=${teamID}`);
+    const data = await response.json();
+    const teamIDsElement = documnet.getElementById('teamIds')
+    const namesElement = document.getElementById('names');
+    const numbersElement = document.getElementById('numbers');
+    const positionsElement = document.getElementById('positions');
+    // Clear previous data
+    teamIDsElement.innerHTML = '';
+    namesElement.innerHTML = '';
+    numbersElement.innerHTML = '';
+    positionsElement.innerHTML = '';
+    data.forEach(team => {
+        // Create new elements for each player
+        const teamIDElement = document.createElement('div');
+        nameElement.innerHTML = team.name
+        teamIDsElement.appendChild(teamIDElement)
+        const nameElement = document.createElement('div');
+        nameElement.innerHTML = team.name;
+        namesElement.appendChild(nameElement);
+        const numberElement = document.createElement('div');
+        numberElement.innerHTML = team.number;
+        numbersElement.appendChild(numberElement);
+        const positionElement = document.createElement('div');
+        positionElement.innerHTML = team.position;
+        positionsElement.appendChild(positionElement);
+    });
+    // Make elements visible
+    teamIDsElement.style.visibility = 'visible';
+    namesElement.style.visibility = 'visible';
+    numbersElement.style.visibility = 'visible';
+    positionsElement.style.visibility = 'hidden';
+}
 

@@ -11,7 +11,7 @@
 
 
 <h1>Selecet a Position</h1>
-<form>
+<form style="text-align:center">
     <a href="/playerPosition?position=catcher">Catcher</a>
     <a href="/playerPosition?position=pitcher">Pitcher</a>
     <a href="/playerPosition?position=first base">First Base</a>
@@ -68,7 +68,7 @@
             // Make elements visible
             namesElement.style.visibility = 'visible';
             numbersElement.style.visibility = 'visible';
-            positionsElement.style.visibility = 'visible';
+            positionsElement.style.visibility = 'hidden';
         }
     // Call the function with the position parameter
     displayPlayerPos("@position");
