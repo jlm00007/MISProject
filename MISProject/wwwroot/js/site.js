@@ -186,11 +186,7 @@ async function displayPlayers(teamID) {
 
 // Displays players based on position
 async function displayPlayerPos(position) {
-    try {
         const response = await fetch(`https://localhost:7270/api/Player/position/catcher`);
-        if (!response.ok) {
-            throw new Error('Failed to fetch data');
-        }
         const data = await response.json();
 
         document.getElementById('names').innerHTML = data[0].name;
@@ -199,7 +195,6 @@ async function displayPlayerPos(position) {
         document.getElementById('numbers').style.visibility = 'visible';
         document.getElementById('positions').innerHTML = data[0].position;
         document.getElementById('positions').style.visibility = 'visible';
-    } catch (error) {
-        console.error('Error:', error);
-    }
+    
 }
+

@@ -4,9 +4,18 @@
     var position = HttpContext.Request.Query["position"];
 
 }
-<h1> This is the right page you just cant put the info in stupid</h1>
-<h2 id="names" style="visibility: hidden;"></h2>
-<div id="numbers" style="visibility: hidden;"></div>
-<div id="positions" style="visibility: hidden;"></div>
+<head>
+    <link rel="stylesheet" href="site.css" />
+    <style>
+    </style>
+</head>
+<body>
+<h1> Player by position</h1>
+<h2 style="color:black"id="names" style="visibility: hidden;"></h2>
+    <div style="color:black" id="numbers" style="visibility: hidden;"></div>
+    <div style="color:black" id="positions" style="visibility: hidden;"></div>
+</body>
 
-<script type="module">displayPlayerPos(@position)</script>
+
+
+    <script type="module">displayPlayerPos(@position)</script>
