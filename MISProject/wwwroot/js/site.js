@@ -186,15 +186,39 @@ async function displayPlayers(teamID) {
 
 // Displays players based on position
 async function displayPlayerPos(position) {
-        const response = await fetch(`https://localhost:7270/api/Player/position/catcher`);
-        const data = await response.json();
+    const response = await fetch(`https://localhost:7270/api/Player/position/${position}`);
+    const data = await response.json();
 
-        document.getElementById('names').innerHTML = data[0].name;
-        document.getElementById('names').style.visibility = 'visible';
-        document.getElementById('numbers').innerHTML = data[0].number;
-        document.getElementById('numbers').style.visibility = 'visible';
-        document.getElementById('positions').innerHTML = data[0].position;
-        document.getElementById('positions').style.visibility = 'visible';
+    const namesElement = document.getElementById('names');
+    const numbersElement = document.getElementById('numbers');
+    const positionsElement = document.getElementById('positions');
+
+    // Clear previous data
+    namesElement.innerHTML = '';
+    numbersElement.innerHTML = '';
+    positionsElement.innerHTML = '';
+
+    data.forEach(player => {
+        // Create new elements for each player
+        const nameElement = document.createElement('div');
+        nameElement.innerHTML = player.name;
+        namesElement.appendChild(nameElement);
+
+        const numberElement = document.createElement('div');
+        numberElement.innerHTML = player.number;
+        numbersElement.appendChild(numberElement);
+
+        const positionElement = document.createElement('div');
+        positionElement.innerHTML = player.position;
+        positionsElement.appendChild(positionElement);
+    });
+
+    // Make elements visible
+    namesElement.style.visibility = 'visible';
+    numbersElement.style.visibility = 'visible';
+    positionsElement.style.visibility = 'visible';
+}
+
     
 }
 
