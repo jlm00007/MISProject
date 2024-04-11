@@ -1,43 +1,10 @@
 ﻿@page
-@model MISProject.Pages.playerPositionModel
+@model MISProject.Pages.CatchersModel
 @{
     var position = HttpContext.Request.Query["position"];
 }
-<head>
-    <link rel="stylesheet" href="site.css" />
-    <style>
-    </style>
-</head>
-
-
-<h1>Selecet a Position</h1>
-<form>
-    <a href="/playerPosition?position=catcher">Catcher</a>
-    <a href="/playerPosition?position=pitcher">Pitcher</a>
-    <a href="/playerPosition?position=first base">First Base</a>
-    <a href="/playerPosition?position=second base">Second Base</a>
-    <a href="/playerPosition?position=shortstop">Shortstop</a>
-    <a href="/playerPosition?position=third base">Third Base</a>
-    <a href="/playerPosition?position=left field">Left Field</a>
-    <a href="/playerPosition?position=center field">Center Field</a>
-    <a href="/playerPosition?position=right field">Right Field</a>
-    <a href="/playerPosition?position=designated hitter">Designated Hitter</a>
-
-</form>
-
-
-
-
-
-
-
-
-
-
-
-
-
 <body>
+    <h1>Catchers</h1>
     <h2 style="color:black" id="names" style="visibility: hidden;"></h2>
     <div style="color:black" id="numbers" style="visibility: hidden;"></div>
     <div style="color:black" id="positions" style="visibility: hidden;"></div>
@@ -70,8 +37,8 @@
             numbersElement.style.visibility = 'visible';
             positionsElement.style.visibility = 'visible';
         }
-    // Call the function with the position parameter
-    displayPlayerPos("@position");
+        // Call the function with the position parameter
+        displayPlayerPos("@position");
     </script>
 
 </body>
