@@ -184,7 +184,7 @@ async function displayPlayers(teamID) {
     document.getElementById('teamName').style.visibility = "visible";
     }
 
-// Displays players based on position
+//Displays players based on position
 async function displayPlayerPos(position) {
     const response = await fetch(`https://localhost:7270/api/Player/position/${position}`);
     const data = await response.json();
@@ -219,6 +219,7 @@ async function displayPlayerPos(position) {
     positionsElement.style.visibility = 'visible';
 }
 
-    
-}
+
+
+
 
