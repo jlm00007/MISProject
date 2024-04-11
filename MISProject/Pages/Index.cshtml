@@ -2,6 +2,7 @@
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
+    var position = HttpContext.Request.Query["position"];
 }
 <head>
     <link rel="stylesheet" href="site.css" />
@@ -48,6 +49,9 @@
         <div> 
             <a href="'https://localhost:7270/api/Team/getteamsbydivision?DivisionName=Al%20east'">AL East</a>
         </div>
+        <div>
+            <a href="/playerPosition">Player POS Test</a>
+        </div>
     </div>
 </body>
 
@@ -74,15 +78,21 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 
-<!-- Not working -->
-    <form id="searchBox" action=/searchResults>
-        <input type="text" id="searchInput" placeholder="Search" />
-        <button type="Submit" onclick="displaySearchResults(position)">Search</button>
-    </form>
-  
-    <div id="searchResults"></div>
+
 
     
 
 
+</body>
+
+
+<body>
+<!-- Not working -->
+    <form id="searchBox" action="/searchResults">
+    <input type="text" id="searchInput" placeholder="Search" />
+    <input type="submit" id="submitBtn" value="Search" class="btn btn-primary"/>
+</form>
+
+
+    <div id="results"></div>
 </body>

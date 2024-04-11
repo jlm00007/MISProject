@@ -158,31 +158,41 @@ function addZero(i) {
 }
 
 
- /** 
-
-async function displayerPlayerDetails(Position) {
-    const repsonse = await fetch('')
-}
  
+
+
+ /** 
 document.getElementByID("searchBox").addEventListener("submit", function (event) {
     event.preventDefault();
     var query = document.getElementById("searchInput").value;
     search(query);
 });
 async function displaySearchResults(position) {
-    fetch(`https://localhost:7270/api/Player/position/{position}`)
+    const response = await fetch(`https://localhost:7270/api/Player/position/{position}`);
     const data = await response.json();
     var innerHtml = "";
     for (let i = 0; i < data.length; i++) {
-        innerHtml += `<div style="card"><a href="https://localhost:7270/api/Player/position/{position}"</a></div>';
+        innerHtml += `<div style="card"><a href=https://localhost:7270/api/Player/position/{position}">${data[i].name}</a></div>`;
     }
     document.getElementById('searchResults').innerHTML = innerHtml;
-
-    }
-    */
+}
+ */   
 
 async function displayPlayers(teamID) {
     const response = await fetch(`https://localhost:7270/api/Player/getplayerdetails?TeamID=${teamID}`)
     const data = await response.json();
     document.getElementById('teamName').style.visibility = "visible";
+    }
+
+// Displays players based on position
+async function displayPlayerPos(position) {
+    const response = await fetch(`https://localhost:7270/api/Player/position/${position}`)
+    const data = await response.json();
+
+    document.getElementById('name').innerHTML = data[0].name;
+    documnet.getElementById('name').style.visibility = 'visible';
+    document.getElementById('number').innerHTML = data[0].number;
+    documnet.getElementById('number').style.visibility = 'visible';
+    document.getElementById('position').innerHTML = data[0].nosition;
+    documnet.getElementById('position').style.visibility = 'visible';
 }
