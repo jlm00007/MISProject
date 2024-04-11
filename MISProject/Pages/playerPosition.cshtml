@@ -1,12 +1,12 @@
 ﻿@page
 @model MISProject.Pages.playerPositionModel
 @{
-    var position = Request.Query["position"];
+    var position = HttpContext.Request.Query["position"];
 
 }
 <h1> This is the right page you just cant put the info in stupid</h1>
-<h2 id="name" style="visibility: hidden;"></h2>
-<div id="number" style="visibility: hidden;"></div>
-<div id="position" style="visibility: hidden;"></div>
+<h2 id="names" style="visibility: hidden;"></h2>
+<div id="numbers" style="visibility: hidden;"></div>
+<div id="positions" style="visibility: hidden;"></div>
 
 <script type="module">displayPlayerPos(@position)</script>

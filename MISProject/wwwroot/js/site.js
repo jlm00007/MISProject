@@ -186,13 +186,20 @@ async function displayPlayers(teamID) {
 
 // Displays players based on position
 async function displayPlayerPos(position) {
-    const response = await fetch(`https://localhost:7270/api/Player/position/${position}`)
-    const data = await response.json();
+    try {
+        const response = await fetch(`https://localhost:7270/api/Player/position/catcher`);
+        if (!response.ok) {
+            throw new Error('Failed to fetch data');
+        }
+        const data = await response.json();
 
-    document.getElementById('name').innerHTML = data[0].name;
-    documnet.getElementById('name').style.visibility = 'visible';
-    document.getElementById('number').innerHTML = data[0].number;
-    documnet.getElementById('number').style.visibility = 'visible';
-    document.getElementById('position').innerHTML = data[0].nosition;
-    documnet.getElementById('position').style.visibility = 'visible';
+        document.getElementById('names').innerHTML = data[0].name;
+        document.getElementById('names').style.visibility = 'visible';
+        document.getElementById('numbers').innerHTML = data[0].number;
+        document.getElementById('numbers').style.visibility = 'visible';
+        document.getElementById('positions').innerHTML = data[0].position;
+        document.getElementById('positions').style.visibility = 'visible';
+    } catch (error) {
+        console.error('Error:', error);
+    }
 }
