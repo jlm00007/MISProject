@@ -4,7 +4,7 @@
     var teamID = HttpContext.Request.Query["teamID"];
 }
 
-<a href="/Team?TeamID=1">Catcher</a>
+<a href="/Team?teamID=1">Catcher</a>
 
 
 
@@ -31,7 +31,7 @@
             namesElement.innerHTML = '';
             numbersElement.innerHTML = '';
             positionsElement.innerHTML = '';
-            data.forEach(player => {
+            data.forEach(Team => {
                 // Create new elements for each player
                 const teamIDElement = document.createElement('div');
                 nameElement.innerHTML = team.name
