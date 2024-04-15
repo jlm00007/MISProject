@@ -1,0 +1,21 @@
+﻿@page
+@model MISProject.Pages.playerStatModel
+@{
+    var name = Request.Query["name"];
+
+}
+
+
+form
+
+<div id="results"></div>
+<div id="map" style="height:100px;"></div>
+<div id="searchResults"></div>
+<script type="module">displaySearchResults(@name");</script>
+
+
+
+
+
+
+
