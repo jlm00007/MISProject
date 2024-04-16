@@ -242,40 +242,7 @@ async function displayPlayers(teamID) {
     namesElement.innerHTML = '';
     numbersElement.innerHTML = '';
     positionsElement.innerHTML = '';
-    data.forEach(team => {
-        async function displayPlayers(teamID) {
-            const response = await fetch(`https://localhost:7270/api/Player/getplayerdetails?TeamID=${teamID}`);
-            const data = await response.json();
-            const teamIDsElement = document.getElementById('teamIds');
-            const namesElement = document.getElementById('names');
-            const numbersElement = document.getElementById('numbers');
-            const positionsElement = document.getElementById('positions');
-            // Clear previous data
-            teamIDsElement.innerHTML = '';
-            namesElement.innerHTML = '';
-            numbersElement.innerHTML = '';
-            positionsElement.innerHTML = '';
-            data.forEach(team => {
-                // Create new elements for each player
-                const teamIDElement = document.createElement('div');
-                teamIDElement.innerHTML = team.teamID;
-                teamIDsElement.appendChild(teamIDElement);
-
-                const nameElement = document.createElement('div');
-                nameElement.innerHTML = team.name;
-                namesElement.appendChild(nameElement);
-
-                const numberElement = document.createElement('div');
-                numberElement.innerHTML = team.number;
-                numbersElement.appendChild(numberElement);
-
-                const positionElement = document.createElement('div');
-                positionElement.innerHTML = team.position;
-                positionsElement.appendChild(positionElement);
-            });
-        }
-
-
+ 
     // Make elements visible
     teamIDsElement.style.visibility = 'visible';
     namesElement.style.visibility = 'visible';
