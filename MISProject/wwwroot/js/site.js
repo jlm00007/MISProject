@@ -218,37 +218,26 @@ async function displayPlayerPos(position) {
 async function displayPlayers(teamID) {
     const response = await fetch(`https://localhost:7270/api/Player/getplayerdetails?TeamID=${teamID}`);
     const data = await response.json();
-    const teamIDsElement = document.getElementById('teamIds')
     const namesElement = document.getElementById('names');
-    const numbersElement = document.getElementById('numbers');
-    const positionsElement = document.getElementById('positions');
-    // Clear previous data
+
     
-    teamIDsElement.innerHTML = '';
     namesElement.innerHTML = '';
-    numbersElement.innerHTML = '';
-    positionsElement.innerHTML = '';
-    
-    data.forEach(team => {
-       async function displayPlayers(teamID) {
-    const response = await fetch(`https://localhost:7270/api/Player/getplayerdetails?TeamID=${teamID}`);
-    const data = await response.json();
-    const teamIDsElement = document.getElementById('teamIds');
-    const namesElement = document.getElementById('names');
-    const numbersElement = document.getElementById('numbers');
-    const positionsElement = document.getElementById('positions');
-    // Clear previous data
-    teamIDsElement.innerHTML = '';
-    namesElement.innerHTML = '';
-    numbersElement.innerHTML = '';
-    positionsElement.innerHTML = '';
- 
-    // Make elements visible
-    teamIDsElement.style.visibility = 'visible';
+
+    data.forEach(player => {
+       
+        const playerDiv = document.createElement('div');
+
+        
+        playerDiv.textContent = `${player.name} ${player.number}`;
+
+        
+        namesElement.appendChild(playerDiv);
+    });
+
+  
     namesElement.style.visibility = 'visible';
-    numbersElement.style.visibility = 'visible';
-    positionsElement.style.visibility = 'hidden';
-    }
+}
+
 
 
 

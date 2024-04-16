@@ -187,6 +187,19 @@ body {
 }
 
 
+/* Add this section for displaying player names and numbers side by side */
+#names, #numbers {
+    display: flex;
+    flex-wrap: wrap; /* Wrap items to the next line if they exceed the container's width */
+}
+
+    #names > div, #numbers > div {
+        margin-right: 20px; /* Add some spacing between player names/numbers */
+        display: inline-block; /* Display each name/number pair inline */
+    }
+
+    
+
 @media screen and (max-width: 800px) {
     .app-main {
         width: 95%;
