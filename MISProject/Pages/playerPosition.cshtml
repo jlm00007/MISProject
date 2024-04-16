@@ -38,7 +38,7 @@
 
 
 <body>
-    <div style="color:black" id="names" style="visibility: hidden;"></div>
+    <div style="color:black" id="names" style="visibility: hidden;"></>
     <div style="color:black" id="numbers" style="visibility: hidden;"></div>
     <div style="color:black" id="positions" style="visibility: hidden;"></div>
     <script>
@@ -50,22 +50,22 @@
             const namesElement = document.getElementById('names');
             const numbersElement = document.getElementById('numbers');
             const positionsElement = document.getElementById('positions');
+            
             // Clear previous data
             namesElement.innerHTML = '';
             numbersElement.innerHTML = '';
             positionsElement.innerHTML = '';
+            
             data.forEach(player => {
-                // Create new elements for each player
-                const nameElement = document.createElement('div');
-                nameElement.innerHTML = player.name;
-                namesElement.appendChild(nameElement);
-                const numberElement = document.createElement('div');
-                numberElement.innerHTML = player.number;
-                numbersElement.appendChild(numberElement);
-                const positionElement = document.createElement('div');
-                positionElement.innerHTML = player.position;
-                positionsElement.appendChild(positionElement);
+                const playerDiv = document.createElement('div');
+
+
+                playerDiv.textContent = `${player.name} ${player.number}`;
+
+
+                namesElement.appendChild(playerDiv);
             });
+           
             // Make elements visible
             namesElement.style.visibility = 'visible';
             numbersElement.style.visibility = 'visible';
