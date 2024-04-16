@@ -242,7 +242,7 @@ async function displayPlayers(teamID) {
 
 
 async function displayPlayerStats(Name) {
-            // Get the hotel details from the server using a fetch request.
+         
     const response = await fetch(`https://localhost:7270/api/Stat/${Name}`)
             const data = await response.json();
 
@@ -254,4 +254,5 @@ async function displayPlayerStats(Name) {
                    document.getElementById('stat').innerHTML = data[0].hits + ", " + data[0].strikeouts + ", " + data[0].homeruns;
                    document.getElementById('stat').style.visibility = 'visible';
 
-               }
+}
+
