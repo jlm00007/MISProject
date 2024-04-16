@@ -242,67 +242,72 @@ async function displayPlayers(teamID) {
     namesElement.innerHTML = '';
     numbersElement.innerHTML = '';
     positionsElement.innerHTML = '';
-    data.forEach(team => {
-        async function displayPlayers(teamID) {
-            const response = await fetch(`https://localhost:7270/api/Player/getplayerdetails?TeamID=${teamID}`);
-            const data = await response.json();
-            const teamIDsElement = document.getElementById('teamIds');
-            const namesElement = document.getElementById('names');
-            const numbersElement = document.getElementById('numbers');
-            const positionsElement = document.getElementById('positions');
-            // Clear previous data
-            teamIDsElement.innerHTML = '';
-            namesElement.innerHTML = '';
-            numbersElement.innerHTML = '';
-            positionsElement.innerHTML = '';
-            data.forEach(team => {
-                // Create new elements for each player
-                const teamIDElement = document.createElement('div');
-                teamIDElement.innerHTML = team.teamID;
-                teamIDsElement.appendChild(teamIDElement);
+           data.forEach(team => {
+               async function displayPlayers(teamID) {
+                   const response = await fetch(`https://localhost:7270/api/Player/getplayerdetails?TeamID=${teamID}`);
+                   const data = await response.json();
+                   const teamIDsElement = document.getElementById('teamIds');
+                   const namesElement = document.getElementById('names');
+                   const numbersElement = document.getElementById('numbers');
+                   const positionsElement = document.getElementById('positions');
+                   // Clear previous data
+                   teamIDsElement.innerHTML = '';
+                   namesElement.innerHTML = '';
+                   numbersElement.innerHTML = '';
+                   positionsElement.innerHTML = '';
+                   data.forEach(team => {
+                       // Create new elements for each player
+                       const teamIDElement = document.createElement('div');
+                       teamIDElement.innerHTML = team.teamID;
+                       teamIDsElement.appendChild(teamIDElement);
 
-                const nameElement = document.createElement('div');
-                nameElement.innerHTML = team.name;
-                namesElement.appendChild(nameElement);
+                       const nameElement = document.createElement('div');
+                       nameElement.innerHTML = team.name;
+                       namesElement.appendChild(nameElement);
 
-                const numberElement = document.createElement('div');
-                numberElement.innerHTML = team.number;
-                numbersElement.appendChild(numberElement);
+                       const numberElement = document.createElement('div');
+                       numberElement.innerHTML = team.number;
+                       numbersElement.appendChild(numberElement);
 
-                const positionElement = document.createElement('div');
-                positionElement.innerHTML = team.position;
-                positionsElement.appendChild(positionElement);
-            });
-        }
-
-
-    // Make elements visible
-    teamIDsElement.style.visibility = 'visible';
-    namesElement.style.visibility = 'visible';
-    numbersElement.style.visibility = 'visible';
-    positionsElement.style.visibility = 'hidden';
-    }
+                       const positionElement = document.createElement('div');
+                       positionElement.innerHTML = team.position;
+                       positionsElement.appendChild(positionElement);
+                   });
+               }
 
 
-
-async function displayPlayerStats(Name) {
-            // Get the hotel details from the server using a fetch request.
-    const response = await fetch(`https://localhost:7270/api/Stat/${Name}`)
-            const data = await response.json();
-
-
-            // change the HTML and make visible
-    document.getElementById('Name').innerHTML = data[0].name + ", " + data.[0].hits + ", " + data[0].homeruns + ", " + data[0];
-            document.getElementById('Name').style.visibility = 'visible';
-        }
+               // Make elements visible
+               teamIDsElement.style.visibility = 'visible';
+               namesElement.style.visibility = 'visible';
+               numbersElement.style.visibility = 'visible';
+               positionsElement.style.visibility = 'hidden';
+           }
 
 
-async function displaySearchResults(Name) {
-    const response = await fetch(`https://localhost:7270/api/Stat/${Name}`);
-            const data = await response.json();
-            var innerHtml = "";
-            for (let i = 0; i < data.length; i++) {
-                innerHtml += `<div style="card"><a href="https://localhost:7022/playerStat?name=${data[i].Name}}</a></div>`;
-            }
-            document.getElementById('searchResults').innerHTML = innerHtml;
-        }
+
+function addPlayerFormListener() {
+                   // Add a submit event listener to the form.
+                   document.getElementById('playerForm').addEventListener('submit', function (e) {
+                       // Prevent the default form submission.
+                       e.preventDefault();
+                       // Get user input values.
+                       var userInput = document.getElementById('name').value;
+                   }
+     }
+               
+
+
+async function displayPlayerStat(name) {
+                   // Get the hotel details from the server using a fetch request.
+                   const response = await fetch(`https://localhost:7270/api/Stat/${Name}`)
+                   const data = await response.json();
+
+
+                   // change the HTML and make visible
+                   document.getElementById('name').innerHTML = data[0].name;
+                   document.getElementById('name').style.visibility = 'visible';
+
+                   document.getElementById('stat').innerHTML = data[0].hits + ", " + data[0].strikeouts + ", " + data[0].homeruns;
+                   document.getElementById('stat').style.visibility = 'visible';
+
+               }
