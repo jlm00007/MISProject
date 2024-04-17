@@ -1,14 +1,15 @@
 ﻿@page
 @model MISProject.Pages.playerStatModel
 @{
-    var name = Request.Query["name"];
 
 }
 
 
 
-<form id="playerForm">
-    <input type="text" id="name" value="Name of Player" name="name" />
+<form id="playerForm" action="https://localhost:7270/api/Stat/" method="get">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="Name" placeholder="Enter name">
+    <button type="submit">Search</button>
 </form>
 
 
@@ -18,4 +19,3 @@
 <div id="homeruns" style="visibility:visible"></div>
 
 
-<script type="module">displayPlayerStats(name)</script>

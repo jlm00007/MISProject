@@ -5,8 +5,11 @@ namespace MISProject.Pages
 {
     public class playerStatModel : PageModel
     {
-        public void OnGet()
+
+        public string JsonData { get; private set; }
+        public void OnGet(string JData)
         {
+            JsonData = JData;
         }
     }
 }

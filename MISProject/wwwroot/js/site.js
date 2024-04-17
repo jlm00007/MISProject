@@ -216,36 +216,26 @@ async function displayPlayers(teamID) {
 
 
 
-async function displayPlayerStats(name) {
-            // Get the hotel details from the server using a fetch request.
-    const response = await fetch(`https://localhost:7270/api/Stat/${name}`)
+async function displayPlayerStats(Name) {
+    const response = await fetch(`https://localhost:7270/api/Stat${Name}=Name`)
             const data = await response.json();
-            const hitsElement = document.getElementById('hits')
+            const hitsElement = document.getElementById('hits');
             const strikeoutsElement = document.getElementById('strikeouts');
             const homerunsElement = document.getElementById('homeruns');
 
 
 
-                   hitsElement.innerHTML = data[0].hits + ", " + data[0].strikeouts + ", " + data[0].homeruns;
-                     hitsElement.style.visibility = 'visible';
-                     strikeoutsElement.style.visibility = 'visible';
-                     homerunsElement.style.visibility = 'visible';
+            hitsElement.innerHTML = data[0].hits;
+            hitsElement.style.visibility = 'visible';
+            strikeoutsElement.innerHTML = data[0].strikeouts;
+            strikeoutsElement.style.visibility = 'visible';
+            homerunsElement.innerHTML = data[0].homeruns;
+            homerunsElement.style.visibility = 'visible';
 
 }
 
 
 
-async function getPlayerStat(name) {
-    const response = await fetch(`https://localhost:7270/api/Stat/${name}`);
-    const data = await response.json();
-    var innerHtml = '<h3>PLayers</h3><table class="table"><tr><th>name</th><th>hits</th><th>strikeouts</th><th>homeruns</th></tr>';
-    for (let i = 0; i < data.length; i++) {
-        innerHtml += `<tr><td>${data[i].name}</td><td>${data[i].hits}</td><td>${data[i].strikeouts}</td><td>${data[i].homeruns}</td></tr>`;
-    }
-    innerHtml += "</table>";
-    document.getElementById('name').innerHTML = innerHtml;
-    document.getElementById('name').style.visibility = 'visible';
-}
 
 
 async function displayDivisions(DivisionName) {
