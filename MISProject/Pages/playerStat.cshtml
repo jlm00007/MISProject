@@ -1,21 +1,19 @@
 ﻿@page
 @model MISProject.Pages.playerStatModel
 @{
-
+    var Name = HttpContext.Request.Query["Name"];
 }
 
-
-
-<form id="playerForm" action="https://localhost:7270/api/Stat/" method="get">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="Name" placeholder="Enter name">
-    <button type="submit">Search</button>
+<form id="locationForm" action="/playerStat">
+    <input type="text" id="Name" name="Name" />
+    <input type="submit" id="submitBtn" value="Search" class="btn btn-primary" />
 </form>
 
+<div id="Hits" style="visibility: hidden; color: black;"></div>
+<div id="Strikeouts" style="visibility: hidden; color: black;"> </div>
+<div id="Homeruns" style="visibility: hidden; color: black;"> </div>
 
-<h2 id="name" style="visibility: visible;"></h2>
-<div id="hits" style="visibility: visible;"></div>
-<div id="strikeouts" style="visibility: visible;"></div>
-<div id="homeruns" style="visibility:visible"></div>
-
+<script type="module">
+    displayPlayerStats(@Name)
+</script>
 

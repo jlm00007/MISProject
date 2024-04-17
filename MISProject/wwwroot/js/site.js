@@ -217,20 +217,15 @@ async function displayPlayers(teamID) {
 
 
 async function displayPlayerStats(Name) {
-    const response = await fetch(`https://localhost:7270/api/Stat${Name}=Name`)
+    const response = await fetch(`https://localhost:7270/api/Stat/${Name}`)
             const data = await response.json();
-            const hitsElement = document.getElementById('hits');
-            const strikeoutsElement = document.getElementById('strikeouts');
-            const homerunsElement = document.getElementById('homeruns');
 
-
-
-            hitsElement.innerHTML = data[0].hits;
-            hitsElement.style.visibility = 'visible';
-            strikeoutsElement.innerHTML = data[0].strikeouts;
-            strikeoutsElement.style.visibility = 'visible';
-            homerunsElement.innerHTML = data[0].homeruns;
-            homerunsElement.style.visibility = 'visible';
+    document.getElementById('Hits').innerHTML = data[0].Hits;
+    document.getElementById('Hits').style.visibility = "visible";
+    document.getElementById('Strikeouts').innerHTML = data[0].Strikeouts;
+    document.getElementById('Strikeouts').style.visibility = "visible";
+    document.getElementById('Homeruns').innerHTML = data[0].Homeruns;
+    document.getElementById('Homeruns').style.visibility = "visible";
 
 }
 
