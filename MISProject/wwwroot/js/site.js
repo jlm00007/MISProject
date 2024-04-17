@@ -246,3 +246,21 @@ async function getPlayerStat(name) {
     document.getElementById('name').innerHTML = innerHtml;
     document.getElementById('name').style.visibility = 'visible';
 }
+
+
+async function displayDivisions(DivisionName) {
+    const response = await fetch(`https://localhost:7270/api/Team/getteamsbydivision?DivisionName=${DivisionName}`);
+    const data = await response.json();
+    const divisionsElement = document.getElementById('names');
+
+    divisionsElement.innerHTML = '';
+
+
+    /**data.forEach(team => {
+        const teamElement = document.createElement('div');
+        teamElement.textContent = team.name; 
+        divisionsElement.appendChild(teamElement);
+    });
+    */
+    divisionsElement.style.visibility = 'visible';
+}
