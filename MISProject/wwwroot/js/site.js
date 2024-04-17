@@ -238,7 +238,7 @@ async function displayPlayerStats(Name) {
 
 
 
-async function displayDivisions(DivisionName) {
+async function displayTeams(DivisionName) {
     const response = await fetch(`https://localhost:7270/api/Team/getteamsbydivision?DivisionName=${DivisionName}`);
     const data = await response.json();
     const divisionsElement = document.getElementById('names');
@@ -246,11 +246,11 @@ async function displayDivisions(DivisionName) {
     divisionsElement.innerHTML = '';
 
 
-    /**data.forEach(team => {
+    data.forEach(team => {
         const teamElement = document.createElement('div');
         teamElement.textContent = team.name; 
         divisionsElement.appendChild(teamElement);
     });
-    */
+    
     divisionsElement.style.visibility = 'visible';
 }
