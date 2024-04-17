@@ -1,0 +1,74 @@
+﻿@page
+@model MISProject.Pages.PlayerCRUD1.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<head>
+    <link rel="stylesheet" href="site.css" />
+    <style>
+        body {
+            background-color: cornflowerblue;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        #main {
+            background-color: white;
+            border: solid 2px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #Head {
+            background-color: indianred;
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+
+<h1>Create</h1>
+
+<h4>Player</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Player.Name" class="control-label"></label>
+                <input asp-for="Player.Name" class="form-control" />
+                <span asp-validation-for="Player.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Player.Number" class="control-label"></label>
+                <input asp-for="Player.Number" class="form-control" />
+                <span asp-validation-for="Player.Number" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Player.Position" class="control-label"></label>
+                <input asp-for="Player.Position" class="form-control" />
+                <span asp-validation-for="Player.Position" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Player.TID" class="control-label"></label>
+                <input asp-for="Player.TID" class="form-control" />
+                <span asp-validation-for="Player.TID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

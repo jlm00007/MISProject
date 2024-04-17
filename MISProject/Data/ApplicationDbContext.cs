@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using BaseballSiteAPI.Entities;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace MISProject.Data
@@ -9,5 +10,7 @@ namespace MISProject.Data
             : base(options)
         {
         }
+
+        public DbSet<Player> Player { get; set; }
     }
 }
