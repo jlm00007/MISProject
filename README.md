@@ -85,7 +85,7 @@ Upon arriving at the homepage, users are greeted with an intuitive interface fea
 Clickable references for each MLB position serve as gateways to a page that will list every player at that position in our database.
 
 ### Teams Page
-The Teams page leads you to a page with a list of all 30 teams. After clicking on a team, you are prompted with the players on their roster.
+The Teams page leads you to a page with a list of all 30 teams. After clicking on a team, you are prompted with all of the players and their numbers on their roster.
 
 ### Add a Player
 There is an additional page that will let you view every player in the database and allow you to add a new player.
