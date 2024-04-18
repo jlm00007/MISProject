@@ -74,6 +74,25 @@ We're creating a comprehensive application that seamlessly integrates weather an
 
 ***
 # Climate Swing #
+Welcome to Climate Swing Plus, where baseball enthusiasts can dive into the fascinating relationship between weather conditions and Major League Baseball (MLB) player performance. Our website offers an interactive experience tailored to help users understand how weather impacts the game they love.
+
+## Features
+
+### Real-Time Weather Data
+Upon arriving at the homepage, users are greeted with an intuitive interface featuring a search bar. This tool allows users to retrieve real-time weather data for various cities across the United States. The purpose of this is so users can decide if they want to attend a game based on the current weather.
+
+### Player Position Page
+Clickable references for each MLB position serve as gateways to a page that will list every player at that position in our database.
+
+### Teams Page
+The Teams page leads you to a page with a list of all 30 teams. After clicking on a team, you are prompted with the players on their roster.
+
+### Add a Player
+There is an additional page that will let you view every player in the database and allow you to add a new player.
+
+### WeatherImpact Page
+The last link on the homepage will take you to a chart with weather data and how it affected recent games.
+
 
 <details>
  <summary> Deployment Guide </summary>
