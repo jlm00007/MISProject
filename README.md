@@ -93,6 +93,9 @@ There is an additional page that will let you view every player in the database 
 ### WeatherImpact Page
 The last link on the homepage will take you to a chart with weather data and how it affected recent games.
 
+## Future Enhancement
+In the future, we plan to enhance the application by integrating features such as analyzing how weather conditions impact specific players' performance, optimizing code for faster execution, and expanding interactivity by incorporating additional APIs. These improvements aim to provide users with a more comprehensive and efficient experience while using the application. In preparation for a new group of developers to take over the application, it's crucial for them to understand the architecture, including the frontend and backend technologies used. Familiarity with the APIs integrated, their functionalities, and how they interact with the application is essential. 
+
 
 <details>
  <summary> Deployment Guide </summary>
