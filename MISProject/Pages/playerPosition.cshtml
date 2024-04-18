@@ -6,12 +6,19 @@
 <head>
     <link rel="stylesheet" href="site.css" />
     <style>
+        #Head {
+            display: flex;
+            justify-content: space-around;
+            font-family: Impact;
+            color: ghostwhite;
+        }
+
     </style>
 </head>
 
 
-<h1>Selecet a Position</h1>
-<form>
+<h1 style="text-align:center">Choose a Position</h1>
+<form id="Head">
     <a href="/playerPosition?position=catcher">Catcher</a>
     <a href="/playerPosition?position=pitcher">Pitcher</a>
     <a href="/playerPosition?position=first base">First Base</a>
@@ -38,9 +45,9 @@
 
 
 <body>
-    <div style="color:black" id="names" style="visibility: hidden;"></>
-    <div style="color:black" id="numbers" style="visibility: hidden;"></div>
-    <div style="color:black" id="positions" style="visibility: hidden;"></div>
+        <div style="color:black; visibility:hidden; justify-content:space-around" id="names"></div>
+        <div style="color:black; visibility:hidden; justify-content:space-around" id="numbers"></div>
+        <div style="color:black; visibility:hidden; justify-content:space-around" id="positions"></div>
     <script>
          
         // Define the displayPlayerPos function

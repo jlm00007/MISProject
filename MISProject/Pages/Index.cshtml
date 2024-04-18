@@ -2,7 +2,6 @@
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
-    var position = HttpContext.Request.Query["position"];
 }
 <head>
     <link rel="stylesheet" href="site.css" />
@@ -15,33 +14,25 @@
         }
 
         #main {
-            background-color: white;
+            background-color: ghostwhite;
             border: solid 2px;
             display: flex;
             justify-content: space-around;
         }
 
         #Head {
-            background-color: indianred;
             display: flex;
             justify-content: space-around;
+            font-family:Impact;
+            color: ghostwhite;
         }
     </style>
 </head>
 
-<h1 id="Head"> Baseball Climate Tracker!</h1>
-<h3 id="Head">Please Select the National League East team you want to see climate data for</h3>
+<h1 id="Head"> Climate Swing</h1>
+<h3 id="Head">For all your baseball weather needs!</h3>
 <body>
-    <div id="main">
-        <div style="background-color:white;">
-            <a href="/Phillies">Phillies </a>
-        </div>
-        <div style="background-color:white;">
-            <a href="/Braves">Braves</a>
-        </div>
-        <div style="background-color:white;">
-            <a href="/Mets">Mets</a>
-        </div>
+    <div id="main"> 
         <div style="background-color:white;">
             <a href="/Divisions">Divisions </a>
         </div>
@@ -63,7 +54,7 @@
 <body>
     <div class="app-main" id="parent">
         <div class="header">
-            <h4>Check the stadium weather before you go!</h4>
+            <h4>Check the stadium weather!</h4>
         </div>
         <div class="searchInputBox">
             <input type="text" name="" id="input-box" class="input-box" placeholder="enter city name">
