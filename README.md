@@ -127,11 +127,11 @@ You can also try to troubleshoot using [W3 Schools](https://www.w3schools.com/) 
 <summary> API Documentation </summary>
 
 
-### Get Players by Team API - ###  (Gino Cava)
+### Get Players by Team API -  (Gino Cava)
 This API allows the user to select a listed team and view that team's players and their numbers.  To use it, the user must choose a team, which will enter a team ID in the URL. The input parameter is usually the team ID, which is used to identify the team for which player details are requested. The output includes a list of players associated with the specified team, along with their respective details such as name, position, and number.
 
-### Get Teams by Division	API - ###  (Gino Cava)
-This API allows the user to enter a division and view the teams in that division. The input is typically the division ID, which is used to filter and retrieve teams belonging to that specific division. The output consists of a collection of teams within the specified division, including details such as team name, ID, and city.
+### Get Teams by Division	API -  (Gino Cava)
+This API allows the user to enter a division and view the teams in that division. The input is typically the division ID, which is used to filter and retrieve teams belonging to that specific division. The output consists of a collection of teams within the specified division, including details such as team name, ID, and city. NOTE: This API does not properly function
 
 ### Add Player API - ### (Dustin Null)
 This API allows the user to add a new player to the database. It requires the user to enter the player's ID, name, team, number, and position, then returns these as outputs. To use it, the user must enter all of the required parameters for a player.
