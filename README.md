@@ -76,7 +76,7 @@ We're creating a comprehensive application that seamlessly integrates weather an
 # Climate Swing #
 
 <details>
-  <summary> Deployment Guide </summary>
+ <summary> Deployment Guide </summary>
  
   ### Database Deployment ###
   
