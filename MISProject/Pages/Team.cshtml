@@ -4,43 +4,155 @@
     var teamID = HttpContext.Request.Query["teamID"];
 }
 
-<a href="/Team?teamID=1">Yankees</a>
-<a href="/Team?teamID=2">Red Sox</a>
-<a href="/Team?teamID=3">Rays</a>
-<a href="/Team?teamID=4">Blue Jays</a>
-<a href="/Team?teamID=5">Orioles</a>
-<a href="/Team?teamID=6">White Sox</a>
-<a href="/Team?teamID=7">Indians</a>
-<a href="/Team?teamID=8">Tigers</a>
-<a href="/Team?teamID=9">Royals</a>
-<a href="/Team?teamID=10">Twins</a>
-<a href="/Team?teamID=11">Astros</a>
-<a href="/Team?teamID=12">Athletics</a>
-<a href="/Team?teamID=13">Angels</a>
-<a href="/Team?teamID=14">Mariners</a>
-<a href="/Team?teamID=15">Rangers</a>
-<a href="/Team?teamID=16">Braves</a>
-<a href="/Team?teamID=17">Mets</a>
-<a href="/Team?teamID=18">Nationals</a>
-<a href="/Team?teamID=19">Phillies</a>
-<a href="/Team?teamID=20">Marlins</a>
-<a href="/Team?teamID=21">Cubs</a>
-<a href="/Team?teamID=22">Cardinals</a>
-<a href="/Team?teamID=23">Brewers</a>
-<a href="/Team?teamID=24">Reds</a>
-<a href="/Team?teamID=25">Pirates</a>
-<a href="/Team?teamID=26">Dodgers</a>
-<a href="/Team?teamID=27">Giants</a>
-<a href="/Team?teamID=28">Padres</a>
-<a href="/Team?teamID=29">Rockies</a>
-<a href="/Team?teamID=30">Diamondbacks</a>
+<head>
+    <link rel="stylesheet" href="site.css" />
+    <style>
+        #Head {
+            display: flex;
+            justify-content: space-around;
+            font-family: Impact;
+            color: ghostwhite;
+        }
+
+            #Head a {
+                margin: 0 10px;
+                color: white; 
+            }
+
+        #names {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        body {
+            background-color: cornflowerblue;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        #main {
+            background-color: ghostwhite;
+            border: solid 2px;
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+
+
+
+
+
+<h1 style="text-align:center; color:ghostwhite;">Choose a Team</h1>
+<form id="Head">
+    <div>
+        <a href="/Team?teamID=1">Yankees</a>
+    </div>
+    <div>
+        <a href="/Team?teamID=2">Red Sox</a>
+    </div>
+    <div>
+        <a href="/Team?teamID=3">Rays</a>
+    </div>
+    <div>
+        <a href="/Team?teamID=4">Blue Jays</a>
+    </div>
+    <div>
+        <a href="/Team?teamID=5">Orioles</a>
+    </div>
+    <div>
+        <a href="/Team?teamID=6">White Sox</a>
+    </div>
+    <div>
+        <a href="/Team?teamID=7">Indians</a>
+    </div>
+    <div>
+        <a href="/Team?teamID=8">Tigers</a>
+    </div>
+    <div>
+        <a href="/Team?teamID=9">Royals</a>
+    </div>
+    <div>
+        <a href="/Team?teamID=10">Twins</a>
+    </div>
+    <div>
+        <a href="/Team?teamID=11">Astros</a>
+    </div>
+    <div>
+        <a href="/Team?teamID=12">Athletics</a>
+    </div>
+    <div>
+        <a href="/Team?teamID=13">Angels</a>
+    </div>
+    <div>
+        <a href="/Team?teamID=14">Mariners</a>
+    </div>
+    <div>
+        <a href="/Team?teamID=15">Rangers</a>
+    </div>
+    <div>
+        <a href="/Team?teamID=16">Braves</a>
+    </div>
+    <div>
+        <a href="/Team?teamID=17">Mets</a>
+    </div>
+    <div>
+        <a href="/Team?teamID=18">Nationals</a>
+    </div>
+    <div>
+        <a href="/Team?teamID=19">Phillies</a>
+    </div>
+    <div>
+        <a href="/Team?teamID=20">Marlins</a>
+    </div>
+    <div>
+        <a href="/Team?teamID=21">Cubs</a>
+    </div>
+    <div>
+        <a href="/Team?teamID=22">Cardinals</a>
+    </div>
+    <div>
+        <a href="/Team?teamID=23">Brewers</a>
+    </div>
+    <div>
+        <a href="/Team?teamID=24">Reds</a>
+    </div>
+    <div>
+        <a href="/Team?teamID=25">Pirates</a>
+    </div>
+    <div>
+        <a href="/Team?teamID=26">Dodgers</a>
+    </div>
+    <div>
+        <a href="/Team?teamID=27">Giants</a>
+    </div>
+    <div>
+        <a href="/Team?teamID=28">Padres</a>
+    </div>
+    <div>
+        <a href="/Team?teamID=29">Rockies</a>
+    </div>
+    <div>
+        <a href="/Team?teamID=30">Diamondbacks</a>
+    </div>
+</form>
+
+
 
 
 <body>
-    <div id="names" style="visibility: hidden;"></div>
-    <div id="numbers" style="visibility: hidden;"></div>
-    <div id="positions" style="visibility: hidden;"></div>
+    <div style="color:white; visibility:hidden; justify-content:space-around" id="names"></div>
+    <div style="color:white; visibility:hidden; justify-content:space-around" id="numbers"></div>
+    <div style="color:white; visibility:hidden; justify-content:space-around" id="positions"></div>
     <div id="teamIDs" style="visibility: hidden;"></div>
+
+ 
+
+    
+    
     <script>
        
         async function displayPlayers(teamID) {
