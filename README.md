@@ -96,6 +96,12 @@ The last link on the homepage will take you to a chart with weather data and how
 ## Future Enhancement
 In the future, we plan to enhance the application by integrating features such as analyzing how weather conditions impact specific players' performance, optimizing code for faster execution, and expanding interactivity by incorporating additional APIs. These improvements aim to provide users with a more comprehensive and efficient experience while using the application. In preparation for a new group of developers to take over the application, it's crucial for them to understand the architecture, including the frontend and backend technologies used. Familiarity with the APIs integrated, their functionalities, and how they interact with the application is essential. 
 
+## References
+The troubleshooting process heavily relied on leveraging ChatGPT for interpreting and resolving various error messages encountered throughout the development phase. Its understanding and assistance proved pivotal in addressing technical issues and optimizing the application's performance. Class lectures provided knowledge and guidance to kickstart the development process, helping to establish a solid understanding of key concepts. Additionally, they served as a reference point for initial brainstorming sessions and decision-making processes.
+
+### ChatGPT Prompts
+"Here is the error that my page is throwing when I inspect it in the web browser: Uncaught SyntaxError: missing ) after argument list. Here is my code (pasted code)." ChatGPT immediately caught the seemingly simple error that caused me hours of trouble. Its response follows: "It seems there's some confusion in your code. You have defined the displayPlayers function twice within each other, which is not necessary and can lead to syntax errors."
+
 
 <details>
  <summary> Deployment Guide </summary>
