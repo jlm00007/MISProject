@@ -94,3 +94,21 @@ We're creating a comprehensive application that seamlessly integrates weather an
 If you have any trouble with the website please email us at: jlm00007@mix.wvu.edu, gdc00008@mix.wvu.edu, dgn0001@mix.wvu.edu <br>
 You can also try to troubleshoot using [W3 Schools](https://www.w3schools.com/) or [Chat GPT](https://chat.openai.com/)
 </details>
+
+<details>
+<summary> API Documentation </summary>
+
+
+### Get Players by Team API - ###
+This API allows the user to enter a team ID and view that team's players. It requires the user to enter a team ID and will return that team's list of players, including their parameters. To use it, the user must enter a team ID.
+
+### Get Teams by Division	API - ###
+This API allows the user to enter a division and view the teams in that division. It requires the user to enter the division name and will then return the teams' IDs, names, cities, and states. To use it, the user must enter a division.
+
+### Add Player API - ###
+This API allows the user to add a new player to the database. It requires the user to enter the player's ID, name, team, number, and position, then returns these as outputs. To use it, the user must enter all of the required parameters for a player.
+
+### Get Player Details API - ###
+This API allows the user to get a player's details. It requires the user to enter a player's ID and then returns the player's name, team, number, and position. To use it, the user must enter a player ID. NOTE: This API does not properly function
+
+</details>
