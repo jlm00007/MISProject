@@ -133,10 +133,10 @@ This API allows the user to select a listed team and view that team's players an
 ### Get Teams by Division	API - ###  (Gino Cava)
 This API allows the user to enter a division and view the teams in that division. The input is typically the division ID, which is used to filter and retrieve teams belonging to that specific division. The output consists of a collection of teams within the specified division, including details such as team name, ID, and city.
 
-### Add Player API - ###
+### Add Player API - ### (Dustin Null)
 This API allows the user to add a new player to the database. It requires the user to enter the player's ID, name, team, number, and position, then returns these as outputs. To use it, the user must enter all of the required parameters for a player.
 
-### Get Player Details API - ###
+### Get Player Details API - ### (Dustin Null)
 This API allows the user to get a player's details. It requires the user to enter a player's ID and then returns the player's name, team, number, and position. To use it, the user must enter a player ID. NOTE: This API does not properly function
 
 </details>
