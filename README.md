@@ -84,13 +84,13 @@ Upon arriving at the homepage, users are greeted with an intuitive interface fea
 ### Player Position Page
 Clickable references for each MLB position serve as gateways to a page that will list every player at that position in our database.
 
-### Teams Page
+### Teams Page (Gino Cava)
 The Teams page leads you to a page with a list of all 30 teams. After clicking on a team, you are prompted with all of the players and their numbers on their roster.
 
 ### Add a Player
 There is an additional page that will let you view every player in the database and allow you to add a new player.
 
-### WeatherImpact Page
+### WeatherImpact Page (Gino Cava)
 The last link on the homepage will take you to a chart with weather data and how it affected recent games.
 
 ## Future Enhancement
@@ -127,11 +127,11 @@ You can also try to troubleshoot using [W3 Schools](https://www.w3schools.com/) 
 <summary> API Documentation </summary>
 
 
-### Get Players by Team API - ###
-This API allows the user to select a listed team and view that team's players and their numbers.  To use it, the user must choose a team, which will enter a team ID in the URL.
+### Get Players by Team API - ###  (Gino Cava)
+This API allows the user to select a listed team and view that team's players and their numbers.  To use it, the user must choose a team, which will enter a team ID in the URL. The input parameter is usually the team ID, which is used to identify the team for which player details are requested. The output includes a list of players associated with the specified team, along with their respective details such as name, position, and number.
 
-### Get Teams by Division	API - ###
-This API allows the user to enter a division and view the teams in that division. It requires the user to enter the division name and will then return the teams' IDs, names, cities, and states. To use it, the user must enter a division.
+### Get Teams by Division	API - ###  (Gino Cava)
+This API allows the user to enter a division and view the teams in that division. The input is typically the division ID, which is used to filter and retrieve teams belonging to that specific division. The output consists of a collection of teams within the specified division, including details such as team name, ID, and city.
 
 ### Add Player API - ###
 This API allows the user to add a new player to the database. It requires the user to enter the player's ID, name, team, number, and position, then returns these as outputs. To use it, the user must enter all of the required parameters for a player.
