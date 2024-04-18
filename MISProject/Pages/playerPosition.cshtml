@@ -13,24 +13,59 @@
             color: ghostwhite;
         }
 
+        body {
+            background-color: cornflowerblue;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        #main {
+            background-color: ghostwhite;
+            border: solid 2px;
+            display: flex;
+            justify-content: space-around;
+        }
+
     </style>
 </head>
 
 
-<h1 style="text-align:center">Choose a Position</h1>
-<form id="Head">
-    <a href="/playerPosition?position=catcher">Catcher</a>
-    <a href="/playerPosition?position=pitcher">Pitcher</a>
-    <a href="/playerPosition?position=first base">First Base</a>
-    <a href="/playerPosition?position=second base">Second Base</a>
-    <a href="/playerPosition?position=shortstop">Shortstop</a>
-    <a href="/playerPosition?position=third base">Third Base</a>
-    <a href="/playerPosition?position=left field">Left Field</a>
-    <a href="/playerPosition?position=center field">Center Field</a>
-    <a href="/playerPosition?position=right field">Right Field</a>
-    <a href="/playerPosition?position=designated hitter">Designated Hitter</a>
-
-</form>
+<h1 style="text-align:center; color:ghostwhite;">Choose a Position</h1>
+<body>
+    <div id="main">
+        <div>
+            <a href="/playerPosition?position=catcher">Catcher</a>
+        </div>
+        <div>
+            <a href="/playerPosition?position=pitcher">Pitcher</a>
+        </div>
+        <div>
+            <a href="/playerPosition?position=first base">First Base</a>
+        </div>
+        <div>
+            <a href="/playerPosition?position=second base">Second Base</a>
+        </div>
+        <div>
+            <a href="/playerPosition?position=shortstop">Shortstop</a>
+        </div>
+        <div>
+            <a href="/playerPosition?position=third base">Third Base</a>
+        </div>
+        <div>
+            <a href="/playerPosition?position=left field">Left Field</a>
+        </div>
+        <div>
+            <a href="/playerPosition?position=center field">Center Field</a>
+        </div>
+        <div>
+            <a href="/playerPosition?position=right field">Right Field</a>
+        </div>
+        <div>
+            <a href="/playerPosition?position=designated hitter">Designated Hitter</a>
+        </div>
+    </div>
+</body>
 
 
 
@@ -45,9 +80,9 @@
 
 
 <body>
-        <div style="color:black; visibility:hidden; justify-content:space-around" id="names"></div>
-        <div style="color:black; visibility:hidden; justify-content:space-around" id="numbers"></div>
-        <div style="color:black; visibility:hidden; justify-content:space-around" id="positions"></div>
+        <div style="color:ghostwhite; visibility:hidden; justify-content:inherit;flex-direction:column" id="names"></div>
+        <div style="color:indianred; visibility:hidden; justify-content:inherit; flex-direction:column" id="numbers"></div>
+        <div id="positions"></div>
     <script>
          
         // Define the displayPlayerPos function

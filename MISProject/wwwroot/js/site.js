@@ -157,7 +157,7 @@ function addZero(i) {
     return i;
 }
 
-// This code does not work, but its supposed to grab a players stats based on their name. I was unable to get the search function to work
+//This searches through our database to find a players based on their position 
 async function displayPlayerPos(position) {
     const response = await fetch(`https://localhost:7270/api/Player/position/${position}`);
     const data = await response.json();
@@ -215,6 +215,7 @@ async function displayPlayers(teamID) {
 
 
 
+// This code does not work, but its supposed to grab a players stats based on their name. I was unable to get the search function to work
 
 async function displayPlayerStats(Name) {
     const response = await fetch(`https://localhost:7270/api/Stat/${Name}`)
