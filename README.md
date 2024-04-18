@@ -69,3 +69,26 @@ The use of external sources has been critical in my success so far.  Without the
 
 We're creating a comprehensive application that seamlessly integrates weather analytics with team performance metrics. Whether it's understanding how temperature fluctuations impact batting averages or uncovering the influence of weather patterns on win-loss records, our application provides insight into the correlation between climate and baseball. Additionally, we go beyond the confines of the ballpark by offering users the ability to explore the temperature data of any city with a simple search feature. Whether you're planning on attending the game, or you are interested for fantasy purposes, our application is ideal for you.
 </details>
+
+
+
+***
+# Climate Swing #
+
+<details>
+  <summary> Deployment Guide </summary>
+ 
+  ### Database Deployment ###
+  
+  1. First import the database onto your machine from our [database github](https://github.com/jlm00007/BaseballDB) making sure to run the following code in order.
+  2. Copy the [Database Creation](https://github.com/jlm00007/BaseballDB/blob/main/DatabaseCreation.sql) code and run it.
+  3. Copy the [Database Data](https://github.com/jlm00007/BaseballDB/blob/main/DatabaseData.sql) code and run it.
+  4. Grab each stored procedure from the Database GitHub home page (labeled with each person's name) making sure to run one stored procedure at a time.
+ Once the Database is working properly with no errors move on to step two, setting up the website.
+### Website and API Deployment ###
+1. Now that the Database is working import the code within this Git Hub into your machine, the code should automatically link the Database and the website.
+2. Once the code is in your machine go to the top of your screen where the start option is and hit the drop-down arrow
+3. navigate to the configure startup projects and click on it.
+4. Once it opens the popup menu select multiple startup projects and select to run both the MIS Project and the BaseballSiteAPI, this will allow the website to communicate to the API we have created.
+5. Hit run and use the website as you wish. 
+</details>
