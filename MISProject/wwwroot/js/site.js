@@ -187,7 +187,7 @@ async function displayPlayerPos(position) {
 } 
 
 
-
+//This code searches our database and finds all the players for each team
 async function displayPlayers(teamID) {
     const response = await fetch(`https://localhost:7270/api/Player/getplayerdetails?TeamID=${teamID}`);
     const data = await response.json();
@@ -234,7 +234,7 @@ async function displayPlayerStats(Name) {
 
 
 
-
+//This code does not work, but it is supposed to grab the teams by division
 async function displayTeams(DivisionName) {
     const response = await fetch(`https://localhost:7270/api/Team/getteamsbydivision?DivisionName=${DivisionName}`);
     const data = await response.json();
@@ -251,3 +251,4 @@ async function displayTeams(DivisionName) {
     
     divisionsElement.style.visibility = 'visible';
 }
+
