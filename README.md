@@ -90,5 +90,7 @@ We're creating a comprehensive application that seamlessly integrates weather an
 2. Once the code is in your machine go to the top of your screen where the start option is and hit the drop-down arrow
 3. navigate to the configure startup projects and click on it.
 4. Once it opens the popup menu select multiple startup projects and select to run both the MIS Project and the BaseballSiteAPI, this will allow the website to communicate to the API we have created.
-5. Hit run and use the website as you wish. 
+5. Hit run and use the website as you wish.
+If you have any trouble with the website please email us at: jlm00007@mix.wvu.edu, gdc00008@mix.wvu.edu, dgn0001@mix.wvu.edu <br>
+You can also try to troubleshoot using [W3 Schools](https://www.w3schools.com/) or [Chat GPT](https://chat.openai.com/)
 </details>
