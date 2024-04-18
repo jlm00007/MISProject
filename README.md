@@ -100,7 +100,7 @@ You can also try to troubleshoot using [W3 Schools](https://www.w3schools.com/) 
 
 
 ### Get Players by Team API - ###
-This API allows the user to enter a team ID and view that team's players. It requires the user to enter a team ID and will return that team's list of players, including their parameters. To use it, the user must enter a team ID.
+This API allows the user to select a listed team and view that team's players and their numbers.  To use it, the user must choose a team, which will enter a team ID in the URL.
 
 ### Get Teams by Division	API - ###
 This API allows the user to enter a division and view the teams in that division. It requires the user to enter the division name and will then return the teams' IDs, names, cities, and states. To use it, the user must enter a division.
