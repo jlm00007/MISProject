@@ -78,10 +78,10 @@ Welcome to Climate Swing Plus, where baseball enthusiasts can dive into the fasc
 
 ## Features
 
-### Real-Time Weather Data
+### Real-Time Weather Data 
 Upon arriving at the homepage, users are greeted with an intuitive interface featuring a search bar. This tool allows users to retrieve real-time weather data for various cities across the United States. The purpose of this is so users can decide if they want to attend a game based on the current weather.
 
-### Player Position Page
+### Player Position Page (Joe Monahan)
 Clickable references for each MLB position serve as gateways to a page that will list every player at that position in our database.
 
 ### Teams Page (Gino Cava)
@@ -97,12 +97,17 @@ The last link on the homepage will take you to a chart with weather data and how
 In the future, we plan to enhance the application by integrating features such as analyzing how weather conditions impact specific players' performance, optimizing code for faster execution, and expanding interactivity by incorporating additional APIs. These improvements aim to provide users with a more comprehensive and efficient experience while using the application. In preparation for a new group of developers to take over the application, it's crucial for them to understand the architecture, including the frontend and backend technologies used. Familiarity with the APIs integrated, their functionalities, and how they interact with the application is essential. 
 
 ## References
-The troubleshooting process heavily relied on leveraging ChatGPT for interpreting and resolving various error messages encountered throughout the development phase. Its understanding and assistance proved pivotal in addressing technical issues and optimizing the application's performance. Class lectures provided knowledge and guidance to kickstart the development process, helping to establish a solid understanding of key concepts. Additionally, they served as a reference point for initial brainstorming sessions and decision-making processes.
+The troubleshooting process heavily relied on leveraging ChatGPT for interpreting and resolving various error messages encountered throughout the development phase. Its understanding and assistance proved pivotal in addressing technical issues and optimizing the application's performance. Class lectures provided knowledge and guidance to kickstart the development process, helping to establish a solid understanding of key concepts. Additionally, they served as a reference point for initial brainstorming sessions and decision-making processes. <br>
+[Calander Script](https://github.com/capjamesg/web-calendar/blob/main/webcalendar.js) <br>
+[W3 Schools HTML](https://www.w3schools.com/html/default.asp) <br>
+[W3 Schools CSS](https://www.w3schools.com/css/default.asp) <br>
+[Markdown Guide](https://www.markdownguide.org/cheat-sheet/) <br>
+Class Work <br>
+[Stack Overflow](https://stackoverflow.com/) <br>
 
 ### ChatGPT Prompts
 "Here is the error that my page is throwing when I inspect it in the web browser: Uncaught SyntaxError: missing ) after argument list. Here is my code (pasted code)." ChatGPT immediately caught the seemingly simple error that caused me hours of trouble. Its response follows: "It seems there's some confusion in your code. You have defined the displayPlayers function twice within each other, which is not necessary and can lead to syntax errors."
-
-
+[Joe Monahan ChatGPT prompts](https://chat.openai.com/share/75faa9b6-e642-4ed4-90e3-366648a5ce42)
 <details>
  <summary> Deployment Guide </summary>
  
@@ -126,7 +131,11 @@ You can also try to troubleshoot using [W3 Schools](https://www.w3schools.com/) 
 <details>
 <summary> API Documentation </summary>
 
+### Get Players by Position API (Joe Monahan) ###
+This API allows a user to get a list of player based on the position they select.  For example, if they wanted to see all the catchers on the website they would select the catcher tab this would then fill the query parameter in the url with the position and generate the list of players that have been entered into the database. 
 
+### Get Stats by Player Name (Joe Mnnahan) ###
+This API will allow you to input a player's name into a search bar and will show you their stats (hits, home runs, strikeouts) <B> Note: This API is not yet fully functional </B>
 ### Get Players by Team API -  (Gino Cava)
 This API allows the user to select a listed team and view that team's players and their numbers.  To use it, the user must choose a team, which will enter a team ID in the URL. The input parameter is usually the team ID, which is used to identify the team for which player details are requested. The output includes a list of players associated with the specified team, along with their respective details such as name, position, and number.
 
@@ -134,7 +143,7 @@ This API allows the user to select a listed team and view that team's players an
 This API allows the user to enter a division and view the teams in that division. The input is typically the division ID, which is used to filter and retrieve teams belonging to that specific division. The output consists of a collection of teams within the specified division, including details such as team name, ID, and city. NOTE: This API does not properly function
 
 ### Add Player API - ### (Dustin Null)
-This API allows the user to add a new player to the database. It requires the user to enter the player's ID, name, team, number, and position, then returns these as outputs. To use it, the user must enter all of the required parameters for a player.
+This API allows the user to add a new player to the database. It requires the user to enter the player's ID, name, team, number, and position, and then returns these as outputs. To use it, the user must enter all of the required parameters for a player.
 
 ### Get Player Details API - ### (Dustin Null)
 This API allows the user to get a player's details. It requires the user to enter a player's ID and then returns the player's name, team, number, and position. To use it, the user must enter a player ID. NOTE: This API does not properly function
